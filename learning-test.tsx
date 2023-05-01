@@ -1,9 +1,20 @@
-type SuperPrint = {
-  <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder;
+type Player<E> = {
+  name: string;
+  extraInfo: E;
+};
+type JaewooExtra = {
+  favfood: string;
+};
+type JaewooPlayer = Player<JaewooExtra>;
+
+const jaewoo: JaewooPlayer = {
+  name: "jaewoo",
+  extraInfo: {
+    favfood: "meat",
+  },
 };
 
-const superPrint: SuperPrint = (arr) => arr[0];
-const a = superPrint([1, 2, 3, 4]);
-const b = superPrint([true, false, true]);
-const c = superPrint(["a"]);
-const d = superPrint([1, 2, true, false, "hello"]);
+const lynn: Player<null> = {
+  name: "lynn",
+  extraInfo: null,
+};
