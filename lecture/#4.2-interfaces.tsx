@@ -13,20 +13,20 @@
 
 // jaewoo.name = "lalalala";
 
-interface User {
-  name: string;
-}
+// interface User {
+//   name: string;
+// }
 
-interface User {
-  lastname: string;
-}
+// interface User {
+//   lastname: string;
+// }
 
-interface User {
-  health: number;
-}
+// interface User {
+//   health: number;
+// }
 
-const jaewoo: User = {
-  name: "jaewoo",
-  lastname: "jeong",
-  health: 10,
-};
+// const jaewoo: User = {
+//   name: "jaewoo",
+//   lastname: "jeong",
+//   health: 10,
+// };
